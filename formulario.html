@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario pa Isra</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 60px;
+            font-family: "Cardo";
+            font-size: 20px;
+        }
+        .flex{
+            display: flex;
+        }
+        .vertical{
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+        label{
+            width: 200px;
+        }
+        input{
+            width: 200px;
+        }
+        h3{
+            margin: 15px 0px;
+        }
+        .primero{
+            margin-top: 0px;
+        }
+        .juntar{
+            width: fit-content;
+            margin-right: 10px;
+        }
+        .submit{
+            margin-top: 45px;
+            margin-left: 15px;
+            padding: 10px;
+            background-color: blue;
+            color: whitesmoke;
+            font-family: "Cardo";
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .cuota{
+            align-items: center;
+            padding-left: 15px;
+        }
+        p{
+            margin: 30px 0px;
+            text-indent: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto:rageoffenrris@gmail.com " method="post" enctype="text/plain">
+
+        <h3 class="primero">Datos Personales</h3>
+
+        <div class="nombreYApellidos flex">
+            <div class="nombre vertical">
+                <label for="nombre">Nombre</label>
+                <input name="nombre" id="nombre" type="text" />
+            </div>
+            
+            <div class="apellido1 vertical">
+                <label for="apellido1">Apellido</label>
+                <input name="apellido1" id="apellido1" type="text" />
+            </div>
+            
+            <div class="apellido2 vertical">
+                <label for="apellido2">Apellido</label>
+                <input name="apellido2" id="apellido2" type="text" />
+            </div>
+        </div>
+
+        <div class="direccion flex">
+            <div class="calle vertical">
+                <label for="calle">Calle</label>
+                <input name="calle" id="calle" type="text" />
+            </div>
+            
+            <div class="numero vertical">
+                <label for="numero">Número</label>
+                <input name="numero" id="numero" type="number" />
+            </div>
+            
+            <div class="piso vertical">
+                <label for="piso">Piso</label>
+                <input name="piso" id="piso" type="number" />
+            </div>
+            
+            <div class="letra vertical">
+                <label for="letra">Letra</label>
+                <input name="letra" id="letra" type="text" />
+            </div>
+
+            <div class="codigoPostal vertical">
+                <label for="codigoPostal">Código Postal</label>
+                <input name="codigoPostal" id="codigoPostal" type="number" />
+            </div>
+            
+            <div class="poblacion vertical">
+                <label for="poblacion">Población</label>
+                <input name="poblacion" id="poblacion" type="text" />
+            </div>
+        </div> 
+        
+        <div class="movilYCorreo flex">
+            <div class="movil vertical">
+                <label for="movil">Móvil</label>
+                <input name="movil" id="movil" type="number" />
+            </div>
+            
+            <div class="correo vertical">
+                <label for="correo">Correo electrónico</label>
+                <input name="correo" id="correo" type="email" />
+            </div>
+        </div>
+
+        <h3>Datos Profesionales</h3>
+
+        <div class="datosEmpresariales flex">
+            <div class="empresa vertical">
+                <label for="empresa">Empresa</label>
+                <input name="empresa" id="empresa" type="text" />
+            </div>
+            
+            <div class="sector vertical">
+                <label for="sector">Sector</label>
+                <input name="sector" id="sector" type="text" />
+            </div>
+        </div>
+        
+        <h3>Tipo de cuota</h3>
+
+        <div class="cuota flex">
+            <input type="radio" id="activo" name="activo" value="activo" class="juntar">
+            <label for="activo" id="labActivo" class="juntar">Activo</label>
+            <input type="radio" id="precario" name="precario" value="precario" class="juntar">
+            <label for="precario" id="labPrecario" class="juntar">Precario</label>
+        </div>
+        
+        <input type="submit" value="Meter datos" class="submit">
+    </form>
+
+    <p>
+        La cuota de <b>PRECARIO/A</b> es para las personas cuyo salario es inferior al Salario Mínimo Interprofesional. Si se
+        marca esta opción hay que acompañar la última nómina.
+        En caso de dejar de abonar la cuota por nómina por cualquier motivo para continuar afiliado/a hay que proporcionar un número de cuenta bancaria al Sindicato. En caso de no proporcionar la cuenta bancaria a los seis meses
+        se procederá a tramitar la baja como afiliado/a,
+    </p>
+
+    <h3>INFORMACIÓN LOPD</h3>
+
+    <p>
+        De conformidad con lo dispuesto en el artículo 13 RGPD procedemos a informarle que el responsable del tratamiento de
+sus datos personales es CGT Sindicato de Transportes y Comunicaciones de Madrid,C/ Alenza, 13 5ª Planta 28003 Madrid,
+Tel.- 91554 77 02, finanzas@cgt-transportesmadrid.org. La finalidad del tratamiento es la gestión de la afiliación al sindicato,
+convocatoria a asambleas y reuniones, y envío de publicaciones e informaciones periódicas. Dicho tratamiento es efectuado en
+el ámbito de las actividades legítimas del Sindicato y con su consentimiento explícito. Es obligatorio facilitar los datos personales para poder formalizar la afiliación sindical. Destinatarios de la información serán: 1) El Secretariado Permanente del Comité
+Confederal CGT para las mismas finalidades apuntadas anteriormente; 2) CGT Madrid Castilla La Mancha-Extremadura para la
+verificación de la vigencia de la afiliación y consiguiente prestación de servicios jurídicos; 3) Entidad bancaria o empresa donde
+trabaje para proceder al cobro de la cuota sindical mediante la emisión del correspondiente recibo o descuento en nómina, consintiendo explícitamente el interesado estas tres comunicaciones de datos. Puede ejercitar sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento, portabilidad de sus datos, revocación del consentimiento, y derecho a
+presentar una reclamación ante la autoridad de control en finanzas@cgt-transportesmadrid.org. Conservaremos sus datos durante cinco años una vez concluida su afiliación.
+    </p>
+    <a>¿link al pdf de firma de autorización?</a>
+</body>
+</html>
